@@ -1,0 +1,7 @@
+=SI.CONDITIONS(
+    [@[Batch_Qty_Remaining]] = 0; "CLOTURÉ - Lot épuisé";
+    [@[Expiry_Date]] <= DATE(2026;10;31); "NOIR - Produit périmé (Quarantaine)";
+    ([@[Expiry_Date]] - DATE(2026;10;31)) <= 90; "ROUGE - Péremption < 3 mois (FEFO Urgent)";
+    ([@[Expiry_Date]] - DATE(2026;10;31)) <= 180; "ORANGE - Péremption 3 à 6 mois";
+    VRAI; "VERT - Date valide (> 6 mois)"
+)

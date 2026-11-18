@@ -1,0 +1,7 @@
+=SI.CONDITIONS(
+    [@[Available_Qty]] = 0; "ROUGE - Rupture";
+    [@[Available_Qty]] > [@[Maximum_Stock_Qty]]; "BLEU - Surstock";
+    [@[Available_Qty]] < [@[Minimum_Stock_Qty]]; "ORANGE - Critique (< Min)";
+    [@[Available_Qty]] <= [@[Safety_Stock_Qty]]; "JAUNE - Vigilance (<= Alerte)";
+    VRAI; "VERT - Normal"
+)

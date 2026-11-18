@@ -1,0 +1,31 @@
+pharmaceutical-supply-chain-analytics/
+│
+├── README.md                                       # 1. Documentation principale du projet (en anglais)
+│
+├── data/
+│   ├── raw/                                        # 2. Données brutes (fichiers CSV)
+│   │   ├── products.csv
+│   │   ├── facilities.csv
+│   │   ├── stock_data.csv
+│   │   ├── transactions.csv
+│   │   ├── consumption.csv
+│   │   ├── supply_orders.csv
+│   │   └── expiry_tracking.csv
+│   │
+│   └── processed/                                  # 3. Données traitées ou fichier de synthèse
+│       └── cleaned_data.xlsx
+│
+├── excel/
+│   └── Pharmaceutical_Supply_Chain_Dashboard.xlsx  # 4. Le classeur Excel complet (modèle, formules, TCD, alertes)
+│
+├── documentation/                                  # 5. Documents techniques et méthodologiques
+│   ├── data_dictionary.md                          # Description de chaque variable et règle de validation
+│   ├── kpi_definitions.md                          # Formules mathématiques et logiques des indicateurs
+│   └── business_recommendations.md                 # Analyse logistique et plans d'action (Ruptures, Surstocks, FEFO)
+│
+├── dashboard/
+│   └── dashboard_preview.png                       # 6. Capture d'écran du Tableau de bord exécutif (KPI_DASHBOARD)
+│
+└── screenshots/                                    # 7. Captures d'écran des fonctionnalités clés
+    ├── stock_alerts.png                            # Aperçu du système d'alerte automatique (codes couleur)
+    └── consumption_analysis.png                    # Aperçu des graphiques d'évolution et top produits
